@@ -1,5 +1,5 @@
 # food-categories-api-app-
-Through the API, display the food categories and each classification some meals that can be made from it and each meal has a page showing its ingredients and affiliated to any country with a YouTube link showing how to make it
+Through the API and react native, display the food categories and each classification some meals that can be made from it and each meal has a page showing its ingredients and affiliated to any country with a YouTube link showing how to make it
 
 ![0](https://user-images.githubusercontent.com/64332249/103445781-8fb27580-4c89-11eb-923e-117a24a5860c.JPG)
 ![Capture](https://user-images.githubusercontent.com/64332249/103445780-8e814880-4c89-11eb-8620-1c2466e01141.JPG)
