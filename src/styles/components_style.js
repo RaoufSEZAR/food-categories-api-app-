@@ -10,7 +10,7 @@ const restaurant_view = StyleSheet.create({
     backgroundColor: 'white',
     padding: 10,
     margin: 10,
-    borderRadius: 10,
+    borderRadius: 20,
   },
 
   title: {
@@ -24,6 +24,8 @@ const restaurant_view = StyleSheet.create({
     marginVertical: 10,
     borderRadius: 10,
     height: deviceSize.height / 3,
+    borderColor:"#742038",
+    borderWidth:2,
   },
 
   description: {
@@ -65,7 +67,6 @@ const ContentStyles = StyleSheet.create({
     height: deviceSize.height / 2.5,
     borderTopLeftRadius:30,
     borderTopRightRadius:30,
-
   },
   mealName: {
     fontWeight: 'bold',
@@ -75,7 +76,6 @@ const ContentStyles = StyleSheet.create({
     paddingLeft:90,
 
   },
-  title: {},
   footer: {
     padding: 5,
     borderBottomLeftRadius: 10,
