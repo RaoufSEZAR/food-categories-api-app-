@@ -2,9 +2,11 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 /* eslint-disable prettier/prettier */
 import React,{useState,useEffect} from 'react';
-import {SafeAreaView, View, StyleSheet, FlatList} from 'react-native';
+import {SafeAreaView, View, FlatList} from 'react-native';
 import axios from 'axios';
 import {SingleMeal} from '../components';
+import {Styles} from '../styles/pages_styles';
+
 
 function MeelDetail({route}) {
     const {Id} = route.params;
@@ -28,8 +30,8 @@ function MeelDetail({route}) {
 
 
     return (
-    <SafeAreaView style={styles.container}>
-        <View style={styles.ViewContainer}>
+    <SafeAreaView style={Styles.container}>
+        <View style={Styles.ViewContainer}>
             <FlatList
             keyExtractor={(item) => item.idMeal.toString()}
             data={mealsList}
@@ -39,19 +41,8 @@ function MeelDetail({route}) {
         </View>
     </SafeAreaView>
         );
-    }
+}
 
-    export {MeelDetail};
-
-    const styles = StyleSheet.create({
-    container: {
-    backgroundColor: 'red',
-    flex:1,
-    },
-    ViewContainer: {
-    backgroundColor: '#f0e5c9',
-    flex:1,
-    },
-});
+export {MeelDetail};
 
 

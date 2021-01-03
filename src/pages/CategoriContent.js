@@ -8,6 +8,7 @@ import {SafeAreaView, View, StyleSheet, FlatList,ActivityIndicator,Text} from 'r
 import axios from 'axios';
 import {CategoriContentCard} from '../components';
 import {main_view} from '../styles/components_style';
+import {Styles} from '../styles/pages_styles';
 
 function CategoriContent(props) {
     const {selected_data} = props.route.params;
@@ -49,8 +50,8 @@ const renderCategories = ({item}) => (
 
 
 return (
-    <SafeAreaView style={styles.container}>
-        <View style={styles.ViewContainer}>
+    <SafeAreaView style={Styles.container}>
+        <View style={Styles.ViewContainer}>
             <FlatList
             keyExtractor={(item) => item.idMeal.toString()}
             data={categoriesList}
@@ -63,16 +64,5 @@ return (
 }
 
 export {CategoriContent};
-
-const styles = StyleSheet.create({
-container: {
-    backgroundColor: 'red',
-    flex:1,
-    },
-    ViewContainer: {
-    backgroundColor: '#f0e5c9',
-    flex:1,
-    },
-});
 
 

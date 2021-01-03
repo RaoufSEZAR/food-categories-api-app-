@@ -8,6 +8,8 @@ import {SafeAreaView, View, StyleSheet, ActivityIndicator,Text,FlatList} from 'r
 import axios from 'axios';
 import {CategorisCard} from '../components';
 import {main_view} from '../styles/components_style';
+import {Styles} from '../styles/pages_styles';
+
 
 
 
@@ -52,8 +54,8 @@ function Categories(props) {
             );
         }
     return (
-        <SafeAreaView style={CategoriesStyles.container}>
-            <View style={CategoriesStyles.ViewContainer}>
+        <SafeAreaView style={Styles.container}>
+            <View style={Styles.ViewContainer}>
                 <FlatList
                 keyExtractor={(item) => item.idCategory.toString()}
                 data={categoriesList}
@@ -66,14 +68,3 @@ function Categories(props) {
 }
 
 export {Categories};
-
-const CategoriesStyles = StyleSheet.create({
-    container: {
-        backgroundColor: 'red',
-        flex:1,
-    },
-    ViewContainer: {
-        backgroundColor: '#f0e5c9',
-        flex:1,
-    },
-});

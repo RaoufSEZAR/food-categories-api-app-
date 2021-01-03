@@ -102,6 +102,8 @@ const CategorisStyles = StyleSheet.create({
     flex:1,
     margin:5,
     borderRadius:50,
+    borderColor:"#742038",
+    borderWidth:2,
     justifyContent:"space-between",
   },
   CardView:{
@@ -116,7 +118,7 @@ const CategorisStyles = StyleSheet.create({
     height:Dimensions.get("window").height / 6,
     width:Dimensions.get("window").width / 2,
     resizeMode:"contain",
-    borderRadius:30,
+    borderRadius:38,
   },
 });
 
